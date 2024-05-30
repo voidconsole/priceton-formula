@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css"/>
+  <title>Priceton Calculator</title>
+</head>
+
+<body>
+    <div id="pop">
+        <span id="cost">Your true priceton cost is:</span><span id="res"></span>
+    </div>
+    <div id="black" onClick="remove()">
+        
+    </div>
+<main>
+  <h1 >
+    Priceton Formula
+  </h1>
+  <p>
+    Get the perfect price for every piece of creation.
+  </p>
+  <form>
+    <article>
+    <label for="time">Enter the time taken for your piece:</label>
+    <input type="text" id="time" name="time" value="1" default="100">hrs</input><br></article>
+<article>
+    <label for="hrPr">Enter the amount you charge per hour:</label>
+    <input type="text" id="hrPr" name="time" value="30">INR</input><br></article>
+<article>
+    <label for="beta">Enter the percent how much it messed your brain:</label>
+    <input type="text" id="beta" name="beta" value="0">%</input><br></article>
+<article>
+    <label for="will">Enter how willing you want to keep this piece:</label>
+    <input type="text" id="will"name="will" value="0">%</input><br></article>
+<article>
+    <label for="mat">Enter the material cost:</label>
+    <input type="text" id="mat" name="mat" value="0">INR</input><br></article>
+<article>
+    <label for="love">Enter the professional qualtiy rating:</label>
+    <input type="text" id="love" name="love" value="0">INR</input><br></article>
+    <label for="fac">Change the multiplicative factor</label>
+    <input type="range" id="fac" max="10" min="1" name="fac" value="1" onChange="slide()"><span id="sl">1</span></input>
+    </form>
+ <button id="getRes" onClick="update()">Go!</button>
+</main>
+  <script src="app.js"></script>
+</body>
+
+</html>
