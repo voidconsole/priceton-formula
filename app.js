@@ -2,7 +2,7 @@ var dom = document
 
 
 function Priceton(time=0, qlty=0,mat=0, will=0, beta=0,hrP=30,fac=1){
-    return (time*hrP*((beta/100)+fac)*((will/100)+fac))+mat+qlty
+    return (time*hrP*((beta/100)+fac)*(((100-will)/100)+fac))+mat+qlty
 }
 function update() {
     let time = parseFloat(dom.querySelector("#time").value);
