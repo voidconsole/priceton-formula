@@ -24,26 +24,27 @@
   </p>
   <form>
     <article>
-    <label for="time">Enter the time taken for your piece:</label>
-    <input type="text" id="time" name="time" value="1" default="100">hrs</input><br></article>
+    <label for="time">Time taken for completing the piece:</label>
+    <input type="text" id="time" name="time" value="1">hrs</input><br></article>
 <article>
-    <label for="hrPr">Enter the amount you charge per hour:</label>
+    <label for="hrPr">Amount you'd like to charge per hour:</label>
     <input type="text" id="hrPr" name="time" value="30">INR</input><br></article>
 <article>
-    <label for="beta">Enter the percent how much it messed your brain:</label>
-    <input type="text" id="beta" name="beta" value="0">%</input><br></article>
+    <label for="beta">How fustrating it was:</label>
+    <input type="text" id="beta" name="beta" value="0" max="100">%</input><br></article>
 <article>
-    <label for="will">Enter how willing you want to keep this piece:</label>
-    <input type="text" id="will"name="will" value="0">%</input><br></article>
+    <label for="will">How willing are you to NOT give it:</label>
+    <input type="text" id="will"name="will" value="0" max="100">%</input><br></article>
 <article>
-    <label for="mat">Enter the material cost:</label>
+    <label for="mat">Investments, if any:</label>
     <input type="text" id="mat" name="mat" value="0">INR</input><br></article>
 <article>
-    <label for="love">Enter the professional qualtiy rating:</label>
-    <input type="text" id="love" name="love" value="0">INR</input><br></article>
-    <label for="fac">Change the multiplicative factor</label>
+    <label for="love">Extra you would charge as a 3rd-person Professional:</label>
+    <input type="text" id="love" name="love" value="0">INR</input><br>
+</article>
+    <label for="fac">The multiplicative factor:</label>
     <input type="range" id="fac" max="10" min="1" name="fac" value="1" onChange="slide()"><span id="sl">1</span></input>
-    </form>
+    </form> 
  <button id="getRes" onClick="update()">Go!</button>
 </main>
   <script src="app.js"></script>
