@@ -22,30 +22,30 @@
   <p>
     Get the perfect price for every piece of creation.
   </p>
-  <form>
+  <form id="form">
     <article>
     <label for="time">Time taken for completing the piece:</label>
-    <input type="text" id="time" name="time" value="1">hrs</input><br></article>
+    <input type="number" id="time" name="time" value="1">hrs</input><br></article>
 <article>
     <label for="hrPr">Amount you'd like to charge per hour:</label>
-    <input type="text" id="hrPr" name="time" value="30">INR</input><br></article>
+    <input type="number" id="hrPr" name="time" value="30">INR</input><br></article>
 <article>
     <label for="beta">How frustrating it was:</label>
-    <input type="text" id="beta" name="beta" value="0" max="100">%</input><br></article>
+    <input type="number" id="beta" name="beta" value="0" max="100">%</input><br></article>
 <article>
     <label for="will">How willing are you to sell it:</label>
-    <input type="text" id="will"name="will" value="0" max="100">%</input><br></article>
+    <input type="number" id="will"name="will" value="0" max="100">%</input><br></article>
 <article>
     <label for="mat">Investments, if any:</label>
-    <input type="text" id="mat" name="mat" value="0">INR</input><br></article>
+    <input type="number" id="mat" name="mat" value="0">INR</input><br></article>
 <article>
     <label for="love">Extra you would charge as a 3rd-person Professional:</label>
-    <input type="text" id="love" name="love" value="0">INR</input><br>
+    <input type="number" id="love" name="love" value="0">INR</input><br>
 </article>
     <label for="fac">The multiplicative factor:</label>
     <input type="range" id="fac" max="10" min="1" name="fac" value="1" onChange="slide()"><span id="sl">1</span></input>
     </form> 
- <button id="getRes" onClick="update()">Go!</button>
+ <button type="submit" form="form" id="getRes" onClick="update()">Go!</button>
 </main>
   <script src="app.js"></script>
 </body>
