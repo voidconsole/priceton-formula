@@ -12,6 +12,7 @@ position:fixed;
 z-index:99;
 height:37.5%;
 width:37.5%;
+overflow:auto;
 padding:2em;
 background-color:white;
 border-radius:12px;
