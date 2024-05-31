@@ -5,7 +5,7 @@ function Priceton(time=0, qlty=0,mat=0, will=0, beta=0,hrP=30,fac=1){
     return (time*hrP*((beta/100)+fac)*((will/100)+fac))+mat+qlty
 }
 function update() {
-    let time = parseInt(dom.querySelector("#time").value);
+    let time = parseFloat(dom.querySelector("#time").value);
     let love = parseInt(dom.querySelector("#love").value);
     let mat = parseInt(dom.querySelector("#mat").value);
     let hrPr = parseInt(dom.querySelector("#hrPr").value);
