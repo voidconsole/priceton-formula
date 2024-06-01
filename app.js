@@ -32,6 +32,7 @@ function remove() {
 function slide(){
     dom.querySelector("#sl").innerHTML = dom.querySelector('#fac').value
 }
+
 function slideMob(){
     dom.querySelector("#slMob").innerHTML = dom.querySelector('#facMob').value
 }
