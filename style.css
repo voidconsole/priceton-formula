@@ -1,7 +1,8 @@
+*{
 margin:0%;
 padding:0%;
 font-family: 'Microsoft Sans Serif';
-
+}
 }
 #pop{
 display:none;
@@ -116,11 +117,13 @@ border:none;
 width:10em;
 appearance:none;
 cursor:e-resize;
-
 }
 #fac:focus{
 accent-color:coral;
 background-color:white;
+}
+.mobHidden{
+    display:block;
 }
 
 #mobMulFac{
@@ -135,6 +138,9 @@ background-color:white;
     }
     #mobMulFac{
         display:block;
+    }
+    .mobHidden{
+    display:none;
     }
 
 }
