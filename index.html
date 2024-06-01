@@ -42,8 +42,17 @@
     <label for="love">Extra you would charge as a 3rd-person Professional:</label>
     <input type="number" id="love" name="love" min="0" value="0">INR</input><br>
 </article>
+
+    
+    <label class="mobHidden" for="fac">The multiplicative factor:</label>
+    <input class="mobHidden" type="range" id="fac" max="10" min="1" name="fac" value="1" onChange="slide()"><span id="sl">1</span></input>
+
+    
+  <article class="mobMulFac">
     <label for="fac">The multiplicative factor:</label>
     <input type="range" id="fac" max="10" min="1" name="fac" value="1" onChange="slide()"><span id="sl">1</span></input>
+  </article>
+    
     </form> 
  <button onClick="update()">Go!</button>
 </main>
